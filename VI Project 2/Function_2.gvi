@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="6BD78BE2E4C454F094605D59A571B2C88B2D3E0AF0477287D35C68ACF43C49D47831B1103CFAEEC4B347D91310B485141EF60751E5DC5C8A3BCD5D41D09DFE15" Timestamp="1D633451AD3FDF4" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="A288DB4F998AA5D4FDED5A98121C52127B893F2A8DE8C6D42B44651309B085B2B326ED8BE4AA6A66BF493226421AC37781426EDE6E83F6B11C657236C807EA2F" Timestamp="1D63345C46EECFD" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="7.1.0.49152" Version="7.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="7.1.0.49152" Version="7.1.0.49152" />
@@ -69,6 +69,15 @@
 					<p.Text>stop</p.Text>
 				</NodeLabel>
 				<Wire Id="556731ce772e4ac2a4b27cda5df19b86" Joints="N(1123b3a71d3a4273a2380a8de72c7278:Value)|(455,360) N(2f5bd40084914d83a1e3a5419562ab48:Input)|(485,360)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wait Bounds="320 215 40 40" Id="52f74673c5ce4b7485220a1b059a74a1" />
+				<Literal Bounds="245 230 45 15" DataType="UInt32" Id="9e8b19095a0c42eeaf3e4519c3ecd239" Label="bbfecdeaca7649c182960a9e34ee53fa" xmlns="http://www.ni.com/MocCommon">
+					<p.Data>1000</p.Data>
+					<NumericBehavior Interpretation="Exact" ValueFormatter="LV:0" />
+				</Literal>
+				<NodeLabel AttachedTo="9e8b19095a0c42eeaf3e4519c3ecd239" Bounds="245 212 30 15" Id="bbfecdeaca7649c182960a9e34ee53fa" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>milliseconds to wait</p.Text>
+				</NodeLabel>
+				<Wire Id="109fe26475954cf78f57afb1cc1e73d0" Joints="N(9e8b19095a0c42eeaf3e4519c3ecd239:Out)|(290,235) N(52f74673c5ce4b7485220a1b059a74a1:time to wait)|(320,235)" xmlns="http://www.ni.com/PlatformFramework" />
 			</WhileLoop>
 		</BlockDiagram>
 		<NativeFrontPanel Height="[float]1600" HtmlPanel="[bool]False" Id="7df508e44d1c488c879da289210e850c" Left="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
