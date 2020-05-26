@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="96A6B35D915064F9B38978FC7944EAAD2B1A054A4ECB42CC3E83FB8474B344D5E510776E6DF67652A50676472CAF00C887FAC49F0DC63DB7DF80A38F4CABC2A0" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="D10F3E2C5833CCA4129FA58E4D2B09012C4C5535E96E708086D2923EB31736A16ACEE58B85169052DAE40D8A3950EB0EC8AAB0350BAC860579A95603BF7EF761" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="7.1.0.49152" Version="7.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="7.1.0.49153" Version="7.1.0.49153" />
@@ -197,6 +197,7 @@
 							<SparseEnvoyManagerDependencySource Id="35" Target="::NullTarget::Default Component" />
 						</SparseEnvoyManager>
 						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="146" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Function.gvi" StoragePath="Function.gvi" />
+						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="f1775216c6294669a1859beab020cc8a" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Function_2.gvi" StoragePath="Function_2.gvi" />
 					</EmbeddedDefinitionReference>
 					<EmbeddedDefinitionReference Id="42" ModelDefinitionType="RepositoryManagerDefinition" Name="vi.lib.Fpga" Reparentable="False">
 						<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\vi.lib\\Fpga&quot;" />
@@ -244,6 +245,7 @@
 					</ComponentConfiguration>
 				</ComponentDefinition>
 				<SourceFileReference Id="147" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Function.gvi" StoragePath="Function.gvi" />
+				<SourceFileReference Id="b8aefb65a6c44fb8ae35d7e89f64f610" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Function_2.gvi" StoragePath="Function_2.gvi" />
 			</EmbeddedDefinitionReference>
 			<EmbeddedDefinitionReference Id="23" ModelDefinitionType="PackageReferencesDefinition" Name="ProjectReferences">
 				<PackageReferencesDefinition>

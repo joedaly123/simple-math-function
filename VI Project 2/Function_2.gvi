@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="6BD78BE2E4C454F094605D59A571B2C88B2D3E0AF0477287D35C68ACF43C49D47831B1103CFAEEC4B347D91310B485141EF60751E5DC5C8A3BCD5D41D09DFE15" Timestamp="1D633451AD3FDF4" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="6B7DA85F655685B0307F7CDE8FA5A70FADE75C4E7C1E6F620012515C7ABA83AC34BFE9E9248C389C215EC8EDD8287B6A789C8D37AEA92F17FDA9B9DEB36DE733" Timestamp="1D633485B13CA21" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="7.1.0.49152" Version="7.1.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="7.1.0.49152" Version="7.1.0.49152" />
@@ -40,7 +40,7 @@
 			<WhileLoop Bounds="140 125 515 385" DiagramId="380619ef153a40d2b5559075e544b79b" Id="6af1f29aca224de6a2db3f0f767aa172">
 				<LoopIteration Bounds="5 355 15 15" Id="a248f1c39cf349a083aa67d767f3051f" />
 				<LoopCondition Bounds="485 355 15 15" Id="2f5bd40084914d83a1e3a5419562ab48" />
-				<Add Bounds="185 115 30 30" Id="f3839300da2a455f911a7049a9affdc9" Terminals="o=59d355e0ac2044859ae23ac1569cb10c, c0t0v=f3a4664fc1a1437e9593893465e50432, c1t0v=41ea00facd4147f894fe10f071609af6" />
+				<Add Bounds="185 115 30 45" Id="f3839300da2a455f911a7049a9affdc9" Terminals="o=59d355e0ac2044859ae23ac1569cb10c, c0t0v=f3a4664fc1a1437e9593893465e50432, c1t0v=41ea00facd4147f894fe10f071609af6, c2t0v=669aeafe971a4ef6ae50141e0193e1f3" VerticalChunkCount="3" />
 				<DataAccessor Bounds="115 115 40 15" DataItem="f8125d82d4b34de08ce06a70c213d66b" Id="34592d4208774bdf8a5953cb7e92967d" Label="8cf203408e73460495e1e992e07645d9" xmlns="http://www.ni.com/MocCommon">
 					<Terminal DataType="Double" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 				</DataAccessor>
@@ -69,6 +69,22 @@
 					<p.Text>stop</p.Text>
 				</NodeLabel>
 				<Wire Id="556731ce772e4ac2a4b27cda5df19b86" Joints="N(1123b3a71d3a4273a2380a8de72c7278:Value)|(455,360) N(2f5bd40084914d83a1e3a5419562ab48:Input)|(485,360)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wait Bounds="320 215 40 40" Id="52f74673c5ce4b7485220a1b059a74a1" />
+				<Literal Bounds="245 230 45 15" DataType="UInt32" Id="9e8b19095a0c42eeaf3e4519c3ecd239" Label="bbfecdeaca7649c182960a9e34ee53fa" xmlns="http://www.ni.com/MocCommon">
+					<p.Data>1000</p.Data>
+					<NumericBehavior Interpretation="Exact" ValueFormatter="LV:0" />
+				</Literal>
+				<NodeLabel AttachedTo="9e8b19095a0c42eeaf3e4519c3ecd239" Bounds="245 212 30 15" Id="bbfecdeaca7649c182960a9e34ee53fa" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>milliseconds to wait</p.Text>
+				</NodeLabel>
+				<Wire Id="109fe26475954cf78f57afb1cc1e73d0" Joints="N(9e8b19095a0c42eeaf3e4519c3ecd239:Out)|(290,235) N(52f74673c5ce4b7485220a1b059a74a1:time to wait)|(320,235)" xmlns="http://www.ni.com/PlatformFramework" />
+				<DataAccessor Bounds="115 145 40 15" DataItem="af8c9916af5d49a285bbcc40fdec6589" Id="2b6e4812274840d8827de65edc49b9b6" Label="1eb563caf4c4459aa5de6f596dcec16a" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="Double" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<NodeLabel AttachedTo="2b6e4812274840d8827de65edc49b9b6" Bounds="71 145 39 14" Id="1eb563caf4c4459aa5de6f596dcec16a" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>input 2</p.Text>
+				</NodeLabel>
+				<Wire Id="669aeafe971a4ef6ae50141e0193e1f3" Joints="N(2b6e4812274840d8827de65edc49b9b6:Value)|(155,150) N(f3839300da2a455f911a7049a9affdc9:c2t0v)|(185,150)" xmlns="http://www.ni.com/PlatformFramework" />
 			</WhileLoop>
 		</BlockDiagram>
 		<NativeFrontPanel Height="[float]1600" HtmlPanel="[bool]False" Id="7df508e44d1c488c879da289210e850c" Left="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
@@ -81,6 +97,8 @@
 			<Label Height="[float]16" Id="7353055cb00146de950d505dc67588fe" LabelOwner="[UIModel]7fe62cb3aa7c4a00ad70dc2833895195" Left="[float]308" Text="[string]stop" Top="[float]256" Width="[float]24" xmlns="http://www.ni.com/PanelCommon" />
 			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="8f6c6c9a0fdc4fa7b93224e2219f1b86" IsReadOnly="[bool]True" Label="[UIModel]c0cebbc2a62843778cd255f82f23ee5d" Left="[float]340" TabIndex="[int]3" Top="[float]196" Value="{DataItemBinding Id=bb9340e54d7a488fb87b044a83b595db}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Height="[float]16" Id="c0cebbc2a62843778cd255f82f23ee5d" LabelOwner="[UIModel]8f6c6c9a0fdc4fa7b93224e2219f1b86" Left="[float]340" Text="[string]sum" Top="[float]176" Width="[float]23" xmlns="http://www.ni.com/PanelCommon" />
+			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="9b3b9bb043794e9897eedfd7b7d770fe" IsReadOnly="[bool]False" Label="[UIModel]29c6de06612f4ae6bf7d71f3777879bc" Left="[float]164" TabIndex="[int]4" Top="[float]308" Value="{DataItemBinding Id=af8c9916af5d49a285bbcc40fdec6589}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Height="[float]16" Id="29c6de06612f4ae6bf7d71f3777879bc" LabelOwner="[UIModel]9b3b9bb043794e9897eedfd7b7d770fe" Left="[float]164" Text="[string]input 2" Top="[float]288" Width="[float]38" xmlns="http://www.ni.com/PanelCommon" />
 		</NativeFrontPanel>
 		<DataItem AdaptToDiagramType="True" DataType="Double" Id="f8125d82d4b34de08ce06a70c213d66b" Name="input 0" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0x0</p.DefaultValue>
@@ -93,6 +111,9 @@
 		</DataItem>
 		<DataItem AdaptToDiagramType="True" DataType="Boolean" Id="6e570593556043de91f526390edf3488" IsLatched="True" Name="stop" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="Double" Id="af8c9916af5d49a285bbcc40fdec6589" Name="input 2" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0x0</p.DefaultValue>
 		</DataItem>
 	</VirtualInstrument>
 </SourceFile>
